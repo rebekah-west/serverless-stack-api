@@ -13,6 +13,8 @@ export const main = handler(async (event, context) => {
       content: data.content, // Parsed from request body
       attachment: data.attachment, // Parsed from request body
       createdAt: Date.now(), // Current Unix timestamp
+      lastModified: Date.now(), //Current Unix timestamp
+      lastWorn: -1, //representing never having been worn
     },
   };
 
